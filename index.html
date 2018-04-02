@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Value Proposition</title>
+</head>
+<body>
+    <h1>Value Proposition Creator</h1>
+    <div id="app">
+        <div id="output">
+            <p style="white-space: pre-line;" id="product">{{product}}</p>
+            <p style="white-space: pre-line;" id="gainscre">{{gaincre}}</p>
+            <p style="white-space: pre-line;" id="painrel">{{painrel}}</p>
+
+            <p style="white-space: pre-line;" id="jobs">{{jobs}}</p>
+            <p style="white-space: pre-line;" id="gains">{{gains}}</p>
+            <p style="white-space: pre-line;" id="pains">{{pains}}</p>
+        </div>
+        <div id="input">
+            <div id="in1">
+                <p>Product: <textarea v-model="product"/></textarea> </p>
+                <p>Gain Creators: <textarea v-model="gaincre"/></textarea> </p>
+                <p>Pain Relief: <textarea v-model="painrel"/></textarea> </p>
+            </div>
+            <div id="in2">
+                <p>Jobs: <textarea v-model="jobs"/></textarea> </p>
+                <p>Gains: <textarea v-model="gains"/></textarea> </p>
+                <p>Pains: <textarea v-model="pains"/></textarea> </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var app = new Vue({
+            el: '#app',
+            data: {
+                product: 'quick roomba',
+                gaincre: 'saves time',
+                painrel: 'less energy used',
+                jobs: 'want to clean',
+                gains: 'less time cleaning',
+                pains: 'no energy to clean'
+            }
+        })
+    </script>
+</body>
+</html>
