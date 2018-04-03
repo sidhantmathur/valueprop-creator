@@ -56,19 +56,19 @@ html {
 #jobs {
     position: absolute;
     top: 270px;
-    right: 380px;
+    left: 1150px;
 }
 
 #gains {
     position: absolute;
     top: 180px;
-    right: 450px;
+    left: 970px;
 }
 
 #pains {
     position: absolute;
     top: 300px;
-    right: 550px;
+    left: 970px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -94,18 +94,18 @@ html {
     #jobs {
         position: absolute;
         top: 150px;
-        right: 22px;
+        left: 690px;
     }
     
     #gains {
         position: absolute;
-        top: 95px;
-        right: 100px;
+        top: 90px;
+        left: 580px;
     }
     
     #pains {
         position: absolute;
         top: 190px;
-        right: 100px;
+        left: 570px;
     }
   }
